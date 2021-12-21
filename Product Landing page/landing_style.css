@@ -1,0 +1,208 @@
+body {
+  position: relative;
+  font-family: sans-serif;
+  background-color: black;
+  color: white;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  min-height: 50px;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+}
+
+nav {
+  font-weight: 400;
+}
+
+.logo {
+  width: 60vw;
+}
+
+.logo > img {
+  width: 100%;
+  height: 100%;
+  max-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 20px;
+}
+
+nav li a:hover {
+  background-color: red;
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+  text-align: right;
+}
+
+li {
+  display: inline-block;
+}
+
+li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-shadow: 2px 2px 5px red;
+}
+
+main {
+  padding-top: 230px;
+}
+
+#tagline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 150px;
+}
+
+#tagline input[type=email] {
+  width: 400px;
+  padding: 10px 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+#tagline input[type=submit] {
+  background-color: white;
+  border: none;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#tagline input[type=submit]:hover {
+  color: black;
+  background-color: red;
+}
+
+#statement {
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+  justify-content: center;
+}
+
+#statement h2 {
+  margin-bottom: 0;
+  text-transform: capitalize;
+  font-family: serif;
+  color: red;
+}
+
+#statement p {
+  margin-top: 0;
+}
+
+#security {
+  width: 700px;
+}
+
+#value {
+  padding-top: 100px;
+  width: 700px;
+}
+
+#integrity {
+  padding-top: 100px;
+  width: 700px;
+}
+
+iframe {
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
+}
+
+#models {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100%  / 3);
+  margin: 10px;
+  border: 1px solid white;
+  border-radius: 3px;
+}
+
+.product > .level {
+  background-color: red;
+  color: black;
+  padding: 15px 0;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.product > h2 {
+  margin-top: 15px;
+}
+
+.product > ol {
+  margin: 15px 0;
+}
+
+.product > ol > li {
+  padding: 5px 0;
+}
+
+.product > button {
+  border: 0;
+  margin: 15px 0;
+  background-color: white;
+  font-weight: 400;
+  cursor: pointer; 
+}
+
+.product > button:hover {
+  background-color: red;
+  transition: background-color 1s;
+}
+
+@media (max-width: 800px) {
+  #pricing {
+    flex-direction: column;
+  }
+  .product {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
+
+footer > span {
+  margin-top: 5px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.9em;
+  color: red;
+}
